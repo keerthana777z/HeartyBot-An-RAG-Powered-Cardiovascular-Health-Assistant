@@ -43,7 +43,7 @@ This project can be extended to support ECG data uploads (e.g., .csv, .json) and
 
 Detect abnormal heart rhythms (Arrhythmias)
 
-Classify conditions like Atrial Fibrillation, Tachycardia, etc.
+Classify conditions like : Atrial Fibrillation, Tachycardia, etc.
 
 Combine structured ECG data with unstructured medical knowledge from PDFs
 
