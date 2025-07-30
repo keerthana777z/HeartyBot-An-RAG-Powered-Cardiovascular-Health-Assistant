@@ -1,16 +1,32 @@
 # ❤️ HeartyBot: An RAG-Powered Cardiovascular Health Assistant
 
-HeartyBot is an AI-powered assistant designed to answer questions related to cardiovascular health using your uploaded PDF documents. It uses **Retrieval-Augmented Generation (RAG)** with **LangChain**, **LLMs**, and **Chroma vector stores** to generate accurate, citation-backed responses — and tells you *exactly* which page and document each answer came from. 📄🔍
+**HeartyBot** is an intelligent AI assistant built to assist in **cardiovascular health queries** using both **medical PDFs** and **advanced biomedical language models**. It leverages **Retrieval-Augmented Generation (RAG)** to provide **citation-backed, page-specific responses** — using **BioMistral-7B**, **PubMedBERT**, and **LangChain** over **ChromaDB**.
 
 ---
 
 ## 🚀 Features
 
--  **Document Upload**: Users can upload one or more PDFs related to cardiovascular health.
--  **Context-Aware Question Answering**: Ask questions, and HeartyBot will generate medically relevant answers using the uploaded documents.
--  **Citation + Page Number Highlighting**: Every response shows which document and page it was derived from.
--  **Streamlit UI**: Clean, user-friendly interface for uploading PDFs, asking questions, and viewing results.
--  **ECG Diagnosis (Future Scope)**: You can extend this to accept ECG signals and provide diagnoses like arrhythmia detection and condition classification.
+- 🔍 **PDF Upload**: Upload one or multiple medical PDFs (e.g., WHO reports, clinical guidelines).
+- 🤖 **Bio-Aware LLM Responses**: Uses **BioMistral-7B** fine-tuned for biomedical knowledge.
+- 📚 **Citation & Page Tracking**: Answers are linked with the page numbers and document names.
+- 🧠 **Domain-specific Embeddings**: Generated via **PubMedBERT** for enhanced medical accuracy.
+- 🌐 **LangChain RAG Pipeline**: Structured document QA via chunking, embedding, retrieval, and generation.
+- 💡 **Future Scope - ECG Analysis**: Extendable for ECG CSV data for arrhythmia classification.
+- 🖥️ **Streamlit Interface**: Simple and responsive UI for users to chat with HeartyBot.
+
+---
+
+## 🧪 Components Overview
+
+| **Component**         | **Tool/Model**                  |
+|-----------------------|---------------------------------|
+| LLM                   | BioMistral-7B                   |
+| Embedding Model       | PubMedBERT                      |
+| Embedding Store       | ChromaDB                        |
+| Pipeline Framework    | LangChain                       |
+| Chunking              | LangChain's Text Splitter       |
+| PDF Parser            | PyMuPDF / LangChain PDF Loader  |
+| UI                    | Streamlit                       |
 
 ---
 
@@ -22,8 +38,19 @@ HeartyBot is an AI-powered assistant designed to answer questions related to car
 The main behavioral risk factors mentioned for cardiovascular diseases globally are cigarette smoking, high blood pressure, high blood cholesterol, overweight, physical inactivity, and diabetes. These can be prevented by eating a healthy diet, exercising regularly, not smoking, and managing existing health conditions.
 
 **Based on**:  
-→ World-Heart-Vision-2030.pdf → Page 13  
-→ healthyheart.pdf → Page 8
+→ *World-Heart-Vision-2030.pdf* → Page 13  
+→ *healthyheart.pdf* → Page 8
+
+---
+
+## 💡 Future Scope: ECG Classification
+
+HeartyBot can be extended into a hybrid health assistant that:
+
+- 🩺 Accepts ECG data files (`.csv`, `.json`)
+- 🧠 Uses ML/DL to classify conditions like Atrial Fibrillation, Tachycardia, Bradycardia, etc.
+- 📊 Cross-references structured signal data with unstructured knowledge (e.g., PDF guidelines)
+- 🧬 Potential to evolve into a **smart diagnostic assistant**
 
 ---
 
@@ -31,20 +58,14 @@ The main behavioral risk factors mentioned for cardiovascular diseases globally 
 
 - **Python 3.10+**
 - [LangChain](https://www.langchain.com/)
+- [BioMistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1)
+- [PubMedBERT](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract)
 - [ChromaDB](https://www.trychroma.com/)
-- [OpenAI GPT-3.5 or GPT-4](https://platform.openai.com/)
+- [Streamlit](https://streamlit.io/)
 - [PyMuPDF (fitz)](https://pymupdf.readthedocs.io/)
-- [Streamlit](https://streamlit.io/) for the UI
 
 ---
 
-🧠 Future Scope: ECG Data Classification
-This project can be extended to support ECG data uploads (e.g., .csv, .json) and use machine learning or deep learning models to:
+## Author
+AR Keerthana
 
-Detect abnormal heart rhythms (Arrhythmias)
-
-Classify conditions like : Atrial Fibrillation, Tachycardia, etc.
-
-Combine structured ECG data with unstructured medical knowledge from PDFs
-
-Imagine a single bot that understands both your test results and your reports — and gives medically grounded insights. That's the future of HeartyBot.
