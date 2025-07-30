@@ -1,0 +1,9 @@
+langchain
+sentence-transformers
+chromadb
+llama-cpp-python
+huggingface_hub
+pymupdf
+python-dotenv
+langchain-community
+
