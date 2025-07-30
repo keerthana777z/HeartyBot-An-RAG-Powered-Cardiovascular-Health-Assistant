@@ -10,7 +10,7 @@ HeartyBot is an AI-powered assistant designed to answer questions related to car
 -  **Context-Aware Question Answering**: Ask questions, and HeartyBot will generate medically relevant answers using the uploaded documents.
 -  **Citation + Page Number Highlighting**: Every response shows which document and page it was derived from.
 -  **Streamlit UI**: Clean, user-friendly interface for uploading PDFs, asking questions, and viewing results.
-- 🧾 **ECG Diagnosis (Future Scope)**: You can extend this to accept ECG signals and provide diagnoses like arrhythmia detection and condition classification.
+-  **ECG Diagnosis (Future Scope)**: You can extend this to accept ECG signals and provide diagnoses like arrhythmia detection and condition classification.
 
 ---
 
