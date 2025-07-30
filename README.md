@@ -6,13 +6,13 @@
 
 ## 🚀 Features
 
-- 🔍 **PDF Upload**: Upload one or multiple medical PDFs (e.g., WHO reports, clinical guidelines).
-- 🤖 **Bio-Aware LLM Responses**: Uses **BioMistral-7B** fine-tuned for biomedical knowledge.
-- 📚 **Citation & Page Tracking**: Answers are linked with the page numbers and document names.
-- 🧠 **Domain-specific Embeddings**: Generated via **PubMedBERT** for enhanced medical accuracy.
-- 🌐 **LangChain RAG Pipeline**: Structured document QA via chunking, embedding, retrieval, and generation.
-- 💡 **Future Scope - ECG Analysis**: Extendable for ECG CSV data for arrhythmia classification.
-- 🖥️ **Streamlit Interface**: Simple and responsive UI for users to chat with HeartyBot.
+-  **PDF Upload**: Upload one or multiple medical PDFs (e.g., WHO reports, clinical guidelines).
+-  **Bio-Aware LLM Responses**: Uses **BioMistral-7B** fine-tuned for biomedical knowledge.
+-  **Citation & Page Tracking**: Answers are linked with the page numbers and document names.
+-  **Domain-specific Embeddings**: Generated via **PubMedBERT** for enhanced medical accuracy.
+-  **LangChain RAG Pipeline**: Structured document QA via chunking, embedding, retrieval, and generation.
+-  **Future Scope - ECG Analysis**: Extendable for ECG CSV data for arrhythmia classification.
+- 🖥 **Streamlit Interface**: Simple and responsive UI for users to chat with HeartyBot.
 
 ---
 
@@ -47,10 +47,10 @@ The main behavioral risk factors mentioned for cardiovascular diseases globally 
 
 HeartyBot can be extended into a hybrid health assistant that:
 
-- 🩺 Accepts ECG data files (`.csv`, `.json`)
-- 🧠 Uses ML/DL to classify conditions like Atrial Fibrillation, Tachycardia, Bradycardia, etc.
-- 📊 Cross-references structured signal data with unstructured knowledge (e.g., PDF guidelines)
-- 🧬 Potential to evolve into a **smart diagnostic assistant**
+-  Accepts ECG data files (`.csv`, `.json`)
+-  Uses ML/DL to classify conditions like Atrial Fibrillation, Tachycardia, Bradycardia, etc.
+-  Cross-references structured signal data with unstructured knowledge (e.g., PDF guidelines)
+-  Potential to evolve into a **smart diagnostic assistant**
 
 ---
 
